@@ -1,1 +1,7 @@
 <h1><%= @student.to_s %></h1>
+
+<div>
+<% @posts.each do |post| %> 
+    <div> <%= link_to 'INDEX', posts_path %></div>
+<% end %>
+</div>
